@@ -38,5 +38,93 @@
             race.
             </summary>
         </member>
+        <member name="T:Codecool.CarRace.RandomHelper">
+            <summary>
+            This is the RandomHelper class
+            </summary>
+        </member>
+        <member name="T:Codecool.CarRace.Vehicle.Kind.Car">
+            <summary>
+            This is the Car class
+            </summary>
+        </member>
+        <member name="M:Codecool.CarRace.Vehicle.Kind.Car.PrepareForLap(Codecool.CarRace.Race)">
+            <summary>
+            Prepare for the next hour: take the special events into consideration (broken truck etc)
+            Implemented per subclass
+            </summary>
+            <param name="race">instance of the currently ongoing race</param>
+        </member>
+        <member name="T:Codecool.CarRace.Vehicle.Kind.Motorcycle">
+            <summary>
+            This is the Motorcycle class
+            </summary>
+        </member>
+        <member name="M:Codecool.CarRace.Vehicle.Kind.Motorcycle.PrepareForLap(Codecool.CarRace.Race)">
+            <summary>
+            Prepare for the next hour: take the special events into consideration (broken truck etc)
+            Implemented per subclass
+            </summary>
+            <param name="race">instance of the currently ongoing race</param>
+        </member>
+        <member name="T:Codecool.CarRace.Vehicle.Kind.Truck">
+            <summary>
+            This is the Truck class
+            </summary>
+        </member>
+        <member name="M:Codecool.CarRace.Vehicle.Kind.Truck.PrepareForLap(Codecool.CarRace.Race)">
+            <summary>
+            Prepare for the next hour: take the special events into consideration (broken truck etc)
+            Implemented per subclass
+            </summary>
+            <param name="race">instance of the currently ongoing race</param>
+        </member>
+        <member name="T:Codecool.CarRace.Vehicle.Vehicle">
+            <summary>
+            This is the Vehicle class
+            </summary>
+        </member>
+        <member name="F:Codecool.CarRace.Vehicle.Vehicle.NormalSpeed">
+            <summary>
+            The speed this vehicle usually travels with.
+            </summary>
+        </member>
+        <member name="F:Codecool.CarRace.Vehicle.Vehicle.Name">
+            <summary>
+            The name of this vehicle.
+            </summary>
+        </member>
+        <member name="F:Codecool.CarRace.Vehicle.Vehicle.ActualSpeed">
+            <summary>
+            The speed of this vehicle for the given hour.
+            <para>
+            Will be set in the implementing classes.
+            </para>
+            </summary>
+        </member>
+        <member name="F:Codecool.CarRace.Vehicle.Vehicle.DistanceTravelled">
+            <summary>
+            A variable accumulating the total of distance this vehicle has
+            travelled.
+            </summary>
+        </member>
+        <member name="M:Codecool.CarRace.Vehicle.Vehicle.PrepareForLap(Codecool.CarRace.Race)">
+            <summary>
+            Prepare for the next hour: take the special events into consideration (broken truck etc)
+            Implemented per subclass
+            </summary>
+            <param name="race">instance of the currently ongoing race</param>
+        </member>
+        <member name="M:Codecool.CarRace.Vehicle.Vehicle.MoveForAnHour">
+            <summary>
+            Simulate the vehicle for one hour. Only updates the travelled distance,
+            actual speed should be updated before calling this method
+            </summary>
+        </member>
+        <member name="T:Codecool.CarRace.Weather.Weather">
+            <summary>
+            This is the Weather class
+            </summary>
+        </member>
     </members>
 </doc>
